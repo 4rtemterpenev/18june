@@ -1,0 +1,35 @@
+.departments
+	&-block
+		display: flex
+		flex-direction: column
+		margin-top: 150px
+		align-items: center
+		&__title
+			font-family: 'Manrope', sans-serif
+			font-weight: 700
+			font-size: 36px
+			line-height: 49px
+			margin-bottom: 20px
+		&__subtitle
+			width: 650px
+			text-align: center
+			+medium
+			font-size: 14px
+			line-height: 16px
+		&__items
+			margin-top: 70px
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+		&__item
+			width: calc( 25% - 40px )
+			p
+				+medium
+				font-size: 12px
+				line-height: 16px
+				margin-top: 10px
+		&__heading
+			color: $maincolor
+			+bold
+			font-size: 14px
+			line-height: 16px
