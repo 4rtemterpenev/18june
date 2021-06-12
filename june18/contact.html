@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <title>Contact</title>
+	<title>Contact</title>
 </head>
+
 <body>
-    <section class="section heading bg">
+	<section class="section heading bg">
 		<div class="wrap">
 			<div class="heading-block">
 				<h2>Our Contact</h2>
@@ -27,14 +29,15 @@
 					</div>
 					<span class="contact-block__title">Address</span>
 					<span class="contact-block__info">A-655 Karol bagh, Near<br>
-						Delhi 93  – <a href="#map" class="contact-block__link">Map</a></span>
+						Delhi 93 – <a href="#map" class="contact-block__link">Map</a></span>
 				</div>
 				<div class="contact-block__item">
 					<div class="contact-block__image">
 						<img src="source/img/icons/phone-icon.svg" alt="">
 					</div>
 					<span class="contact-block__title">Contact info</span>
-					<span class="contact-block__info">Email : <a href="mailto:yourmail@mysite.com">techwero@gmail.com</a> <br>
+					<span class="contact-block__info">Email : <a
+							href="mailto:yourmail@mysite.com">techwero@gmail.com</a> <br>
 						Phone : <a href="tel:+79876543210">+61 3 8376 6284</a></span>
 				</div>
 				<div class="contact-block__item">
@@ -51,30 +54,36 @@
 	<section class="map" id="map">
 		<div class="wrap">
 			<div class="map-style">
-			<iframe src="https://www.google.com/maps/d/embed?mid=1mMJ25TEjIh3RLUgxLLPrGqD8NUcM0XOH"></iframe>
-		</div>
+				<iframe src="https://www.google.com/maps/d/embed?mid=1mMJ25TEjIh3RLUgxLLPrGqD8NUcM0XOH"></iframe>
+			</div>
 		</div>
 	</section>
 	<section class="form">
 		<div class="wrap">
-			<div class="form-block">
+			<form action="#" class="form-block">
 				<span class="form-block__title">Get in Touch</span>
 				<div class="form-block__inputs">
 					<div class="form-block__input">
-						<span>Your Name</span>
-						<input type="text">
+						<span class="form-block__name">Your Name</span>
+						<input type="text" required minlength="2" maxlength="60">
 					</div>
 					<div class="form-block__input">
-						<span>Your Name</span>
-						<input type="text">
+						<span class="form-block__name">Your Email</span>
+						<input type="email" required>
 					</div>
 				</div>
-				<span>Subject</span>
-				<input type="text">
-				<span>Your Message</span>
-				<textarea></textarea>
+				<div class="form-block__subject">
+					<span class="form-block__name">Subject</span>
+					<input type="text">
+				</div>
+				<div class="form-block__message">
+					<span class="form-block__name" >Your Message</span>
+					<textarea required minlength="10" maxlength="1000"></textarea>
+				</div>
+				<input type="submit" value="Send" class="form-block__btn">
 			</div>
 		</div>
 	</section>
 </body>
+
 </html>
