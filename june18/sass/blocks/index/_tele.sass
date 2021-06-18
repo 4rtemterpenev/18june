@@ -1,0 +1,37 @@
+.tele
+    background-color: #F0F6FB
+    width: 100%
+    height: 150px
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    &-text__title
+        +medium
+        font-size: 29px
+        line-height: 33px
+        color: $maincolor 
+    &-text__number
+        +bold
+@media ( max-width: 800px )
+    .tele
+        &-text__title
+            font-size: 26px
+@media ( max-width: 700px )
+    .tele
+        &-text__title
+            font-size: 24px
+@media ( max-width: 500px )
+    .tele
+        height: 80px
+        &-text__title
+            font-size: 20px
+@media ( max-width: 420px )
+    .tele
+        height: 50px
+        &-text__title
+            font-size: 16px
+@media ( max-width: 400px )
+    .tele
+        &-text__title
+            font-size: 14px

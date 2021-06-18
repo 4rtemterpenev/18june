@@ -1,0 +1,153 @@
+body
+	overflow-x: hidden
+.ellipse
+	width: 740px
+	height: 740px
+	background-color: $maincolor
+	border-radius: 50%
+	z-index: 1
+	position: absolute
+	top: -150px
+	right: -150px
+.hero
+	display: flex
+	height: 700px
+.hero-block
+	margin-top: 140px
+	display: flex
+	flex-direction: row
+	z-index: 3
+	position: absolute
+	height: 320px
+	&__image2
+		max-width: 500px
+		margin-left: 70px
+	&__image2 img
+		width: 100%
+		transform: rotate(-7deg)
+		border-radius: 7px
+		box-shadow: 48px 24px 48px rgba(24, 37, 56, 0.12)
+	&__text
+		height: 100%
+		width: 540px
+		display: flex
+		align-items: flex-start
+	&__title-mb
+		margin-top: 15px
+		color: $maincolor
+		font-family: 'Manrope', sans-serif
+		font-weight: 400
+		font-size: 25px
+		line-height: 35px
+	&__subtitle
+		font-family: 'Manrope', sans-serif
+		font-weight: 800
+		font-size: 40px
+		line-height: 42px
+		margin-top: 15px
+		margin-bottom: 15px
+	&__text-mb
+		font-family: 'Manrope',sans-serif
+		font-weight: 400
+		font-size: 18px
+		line-height: 32px
+		color: #18191F
+	&__btn
+		padding: 17px 32px 17px 32px
+		background-color: $maincolor
+		border-radius: 10px
+		color: #ffffff
+		margin-top: 15px
+		font-family: 'Manrope',sans-serif
+		font-size: 20px
+		line-height: 30px
+		font-weight: 700
+		&:hover
+    	background-color: #0310bb
+@media ( max-width: 1200px )
+	.ellipse
+		display: none
+	.hero-block__image2
+		margin-left: 50px
+		width: 470px
+	.hero-block__text
+		width: 500px
+@media ( max-width: 1130px )
+	.hero
+		&-block
+			margin-top: 70px
+		&-block__image2
+			width: 450px
+			margin-left: 40px
+		&-block__text
+			width: 450px
+@media ( max-width: 1060px )
+	.hero
+		&-block
+			&__text
+				width: 400px
+			&__subtitle
+				font-size: 32px
+				line-height: 34px
+			&__btn
+				padding: 13px 28px 13px 28px
+@media ( max-width: 1000px )
+	.hero
+		&-block
+			&__image2
+				width: 390px
+				img
+					box-shadow: none
+@media ( max-width: 950px )
+	.hero
+		&-block
+			&__text
+				width: 370px
+			&__subtitle
+				font-size: 30px
+@media ( max-width: 950px )
+	.hero
+		&-block
+			&__image2
+				width: 350px
+			&__text
+				width: 350px
+			&__subtitle
+				font-size: 28px
+				margin-bottom: 10px
+				margin-top: 10px
+@media ( max-width: 840px )
+	.hero
+		&-block
+			&__title-mb
+				font-size: 20px
+			&__subtitle
+				font-size: 25px
+				margin-top: 5px
+				margin-bottom: 5px
+			&__text-mb
+				font-size: 14px !important
+@media ( max-width: 840px )
+	.hero
+		&-block
+			&__image2 img
+				transform: none
+			&__image2
+				width: 320px
+			&__btn
+				font-size: 15px
+@media ( max-width: 760px )
+	.hero
+		&-block
+			&__image2
+				width: 280px
+			&__text
+				width: 300px
+			&__subtitle
+				font-size: 22px
+			&__title-mb
+				font-size: 16px
+@media ( max-width: 680px )
+	.hero
+		&-block
+			display: flex

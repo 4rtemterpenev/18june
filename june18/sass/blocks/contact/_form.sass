@@ -65,4 +65,63 @@
 		font-family: 'Roboto', sans-serif
 		font-weight: 500
 		color: #ffffff
-
+@media  ( max-width: 950px )
+	.form
+		&-block
+			&__title
+				font-size: 30px
+				margin-bottom: 30px
+			&__input input
+				width: 350px
+			&__subject input
+				width: 740px
+			&__message textarea
+				width: 740px
+@media  ( max-width: 820px )
+	.form
+		&-block
+			&__input input
+				width: 300px
+			&__subject input
+				width: 640px
+			&__message textarea
+				width: 640px
+@media  ( max-width: 740px )
+	.form
+		&-block
+			&__title
+				font-size: 30px
+			&__input input
+				width: 250px
+			&__subject input
+				width: 540px
+			&__message textarea
+				width: 540px
+@media  ( max-width: 580px )
+	.form
+		&-block
+			&__input input
+				width: 200px
+			&__subject input
+				width: 440px
+			&__message textarea
+				width: 440px
+@media  ( max-width: 490px )
+	.form
+		&-block
+			&__inputs
+				display: flex
+				width: 100%
+				flex-direction: column
+			&__input input
+				width: 90%
+			&__input
+				margin-right: 0
+			&__subject input
+				width: 90%
+			&__message textarea
+				width: 90%
+			&__subject
+				width: 100%
+			&__message
+				width: 100%

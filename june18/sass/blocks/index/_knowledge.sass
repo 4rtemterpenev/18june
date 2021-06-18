@@ -1,0 +1,51 @@
+.knowledge
+  position: relative
+  margin-top: 100px
+  height: 450px
+  display: none
+  .ellipse_mb
+    width: 480px
+    height: 480px
+    border-radius: 50%
+    background-color: #F1F1F1
+    position: absolute
+    top: 0
+    left: calc( 50% - 240px )
+    z-index: 1
+  &-block
+    display: flex
+    z-index: 4
+    position: absolute
+    align-items: center
+    height: 100%
+    width: 1200px
+    justify-content: space-between
+    &__image
+      max-width: 550px
+      img
+        width: 100%
+        border-radius: 7px
+        transform: rotate(-7deg)
+        box-shadow: 48px 24px 48px rgba(24, 37, 56, 0.12)
+    &__text
+      width: 540px
+    &__title
+      font-family: 'Manrope', sans-serif
+      font-weight: 700
+      font-size: 20px
+      line-height: 28px
+      color: #000000
+      display: block
+      margin-bottom: 30px
+    &__heading
+      color: $maincolor
+      font-family: 'Manrope', sans-serif
+      font-weight: 400
+      font-size: 20px
+      line-height: 27px
+    &__item p
+      font-family: 'Manrope', sans-serif
+      font-weight: 400
+      font-size: 14px
+      line-height: 19px
+      margin-bottom: 20px

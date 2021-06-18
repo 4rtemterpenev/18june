@@ -29,6 +29,23 @@
 		&__link
 			color: #ff8e31 !important
 			text-decoration: none
-
-
-    
+@media  ( max-width: 1200px )
+	.contact
+		 &-block
+			 &__item
+				 width: calc( 30% - 50px )
+@media  ( max-width: 768px )
+	.contact
+		&-block
+			&__title
+				font-size: 18px
+				line-height: 26px
+			&__info
+				font-size: 12px
+@media  ( max-width: 600px )
+	.contact
+		&-block
+			display: flex
+			flex-direction: column
+			&__item
+				width: 100%

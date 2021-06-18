@@ -1,0 +1,65 @@
+.head
+  height: 72px
+  background-color: #ffffff
+  width: 100%
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 500
+  >.wrap
+    display: flex
+    align-items: center
+    height: 110px
+    justify-content: space-between
+    height: 100%
+.head-block
+  display: flex
+  justify-content: space-between
+  width: 100%
+  align-items: center
+  &__menu
+    display: flex
+    flex-direction: row
+    align-items: center
+    nav
+      display: flex
+    ul
+      display: flex
+    li
+      list-style: none
+      margin-right: 30px
+      &:last-child
+        margin-right: 0
+    a
+      font-family: 'Manrope', sans-serif
+      font-weight: 700
+      font-size: 14px
+      line-height: 20px
+      color: #18191F
+      &:hover
+        color: #000000
+body
+  padding-top: 72px
+
+@media ( max-width: 800px )
+  .head-block__social
+    display: none
+@media ( max-width: 455px )
+  .head-block__menu a
+    font-size: 12px
+  .head-block__menu li
+    margin-right: 15px
+  .head-block__logo
+    width: 110px
+    img
+      width: 100%
+@media ( max-width: 380px )
+  body
+    padding-top: 50px
+  .head
+    height: 50px
+  .head-block__logo
+    width: 90px
+    img
+      width: 100%
+

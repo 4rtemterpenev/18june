@@ -1,8 +1,7 @@
 .news
 	margin-top: 50px
 	&-block.small
-		width: calc( 30% - 50px )
-		height: 356px
+		width: calc( 33% - 50px )
 		display: flex
 		flex-direction: column
 	&-block
@@ -70,3 +69,56 @@
 				text-decoration: none
 				color: $maincolor
 				font-weight: 600
+		&__image_mb
+			width: 100%
+			img
+				width: 100%
+@media  ( max-width: 1200px )
+	.news
+		&-block.double
+			display: none
+		&-block.small
+			width: calc( 50% - 50px )
+@media  ( max-width: 750px )
+	.news
+		&-block.tripple
+			display: none
+		&-block.small
+			width: 100%
+		&-block__stat
+			font-size: 14px !important
+		&-block__items
+			margin-top: 30px
+@media  ( max-width: 425px )
+	.news
+		&-block__stat
+			font-size: 12px !important
+		&-block__stats_mb
+			margin-bottom: 0
+			margin-top: 0
+		&-block__title_mb
+			font-size: 14px !important
+			line-height: 18px !important
+		&-block__text p
+			font-size: 12px
+@media  ( max-width: 350px )
+	.news-block__stat.one
+		display: none
+@media ( max-width: 1000px )
+	.news
+		&-block__title.main
+				font-size: 18px
+				line-height: 26px
+		&-block.main
+			display: flex
+			align-items: center
+@media ( max-width: 900px )
+	.news
+		&-block.main
+			display: flex
+			flex-direction: column
+		&-block__image.main
+			width: 100%
+			margin-right: 0
+			img
+				width: 100%

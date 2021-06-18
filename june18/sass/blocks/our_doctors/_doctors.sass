@@ -1,20 +1,16 @@
 .doctors
   margin-top: 60px
-  height: 410px
   overflow: hidden
   &-block
     display: flex
     flex-direction: row
     &__image
-      overflow: hidden
-      margin-right: 30px
     &__text
       display: flex
       flex-direction: column
       justify-content: center
       width: 570px
-      padding-left: 40px
-      margin-left: -200px
+      margin-left: 55px
       background: #ffffff
       p
         font-family: 'Manrope', sans-serif
@@ -26,3 +22,30 @@
       font-size: 30px
       line-height: 64px
       font-weight: 800
+@media  ( max-width: 1000px )
+  .doctors
+    &-block
+      &__image
+        width: 500px
+        img
+          width: 100%
+      &__title
+        font-size: 25px
+        line-height: 50px
+      &__text p
+        font-size: 14px
+        line-height: 20px
+@media  ( max-width: 700px )
+  .doctors
+    &-block
+      display: flex
+      flex-direction: column
+      align-items: center
+      &__text 
+        width: 100%
+        margin-left: 0
+@media  ( max-width: 550px )
+  .doctors
+    &-block
+      &__image
+        width: 100%

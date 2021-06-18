@@ -1,0 +1,127 @@
+.services-block
+  display: flex
+  align-items: center
+  flex-direction: column
+  margin-top: 150px
+  h2
+    font-family: 'Manrope', sans-serif
+    font-weight: 800
+    font-size: 36px
+    line-height: 64px
+  &__items
+    display: flex
+    justify-content: space-between
+    margin-top: 80px
+  &__subtitle
+    font-family: 'Manrope', sans-serif
+    font-weight: 500
+    font-size: 36px
+    line-height: 64px
+  &__item
+    width: calc( 33% - 150px )
+    p
+      font-family: 'Manrope', sans-serif
+      font-weight: 400
+      font-size: 14px
+      line-height: 26px
+      margin-top: 10px
+      margin-bottom: 40px
+  &__title
+    font-family: 'Manrope', sans-serif
+    font-weight: 600
+    font-size: 24px
+    line-height: 32px
+  &__btn
+    display: flex
+    align-items: center
+    span
+      color: $maincolor
+      font-family: 'Manrope', sans-serif
+      font-size: 12px
+      line-height: 16px
+      font-weight: 700
+      &:hover
+        color: #0011ff
+  &__btn-mb
+    margin-top: 90px
+    span
+      font-family: 'Manrope'
+      font-weight: 700
+      font-size: 20px
+      line-height: 30px
+      color: #000000
+      padding: 2px 2px 2px 2px
+      &:hover
+        border-bottom: 2px solid black
+@media ( max-width: 1150px )
+  .services
+    &-block
+      &__item
+        width: calc( 33% - 100px )
+@media ( max-width: 950px )
+  .services
+    &-block
+      margin-top: 70px
+      h2
+        font-size: 34px
+        line-height: 40px
+      &__item
+        width: calc( 33% - 80px )
+        p
+          margin-bottom: 20px
+      &__title
+        font-size: 20px
+      &__subtitle
+        font-size: 32px
+        line-height: 40px
+      &__items
+        margin-top: 50px
+@media ( max-width: 780px )
+  .services
+    &-block
+      h2
+        font-size: 30px
+      &__title
+        font-size: 18px
+@media ( max-width: 730px )
+  .services
+    &-block
+      &__items.double
+        display: none
+      &__item.double
+        display: none
+      &__item
+        width: calc( 50% - 50px )
+@media ( max-width: 540px )
+  .services
+    &-block
+      h2
+        font-size: 25px
+      &__subtitle
+        font-size: 23px
+      &__items
+        margin-top: 30px
+      &__btn-mb
+        margin-top: 40px
+        span
+          font-size: 18px
+@media ( max-width: 480px )
+  .services
+    &-block
+      &__items
+        display: flex
+        flex-direction: column
+      &__item
+        width: 90%
+        margin-bottom: 15px
+        &:last-child
+          margin-bottom: 0
+      &__btn-mb
+        margin-top: 20px
+@media ( max-width: 480px )
+  .services
+    &-block
+      h2
+        font-size: 22px
+      &__subtitle
+        font-size: 18px

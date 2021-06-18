@@ -1,8 +1,53 @@
+.blog-block
+	display: flex
+	justify-content: space-between
+	flex-direction: column
+	align-items: center
+	width: 100%
+.blog-block__hero
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	width: 100%
+	text-align: center
+	h2
+		font-family: 'Manrope', sans-serif
+		font-weight: 800
+		font-size: 36px
+		line-height: 64px
+	span
+		font-family: 'Manrope', sans-serif
+		font-weight: 400
+		font-size: 18px
+		line-height: 32px
+		width: 540px
 .blog-block__items
-    display: flex
-    flex-direction: row
-    justify-content: space-between
-    margin-top: 60px
-    .small
-        width: 350px
-        margin-top: 5px
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	margin-top: 60px
+	width: 100%
+
+@media  ( max-width: 750px )
+	.blog-block
+		margin-top: 30px
+		h2
+			font-size: 25px
+			line-height: 35px
+		span
+			font-size: 20px
+			line-height: 30px
+			width: 100%
+		&__items
+			margin-top: 30px
+@media  ( max-width: 425px )
+	.blog-block
+		h2
+			font-size: 22px
+			line-height: 35px
+		span
+			font-size: 16px
+			line-height: 30px
+			width: 100%
+	
